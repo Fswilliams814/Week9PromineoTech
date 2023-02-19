@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  
+</head>
+<body class="container-fluid">
+<div class="bg-image shadow-1-strong rounded" style="background-image: url(About\ Us.svg); height: 100vh;">
+  <div class="bg-image shadow-1-strong rounded">
+    <div class="mask" style="background-color: rgba(0, 0, 0, 0.6); height: 100vh;">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="mywebsite.html">FDB WELLNESS ORDER FORM</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="mywebsite.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Transformation.html">Transformations</a>
+              </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Productpage.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="orderpage.html" class="nav-link">Order Page</a>
+                </li>
+              <li class="nav-item dropdown">
+                <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                  Get In Touch
+                </button>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="https://www.linkedin.com/in/fionna-williams/">LinkedIn</a></li>
+                    <li><a class="dropdown-item" href="https://www.youtube.com/@developerpooh/featured">Youtube</a></li>
+                    <li><a class="dropdown-item" href="https://www.facebook.com/imPooh2">FaceBook</a></li>
+                  </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav><br>
+      <h2 class="secondHeading text-white" style="padding-left: 10px;"> Place your order here!</h2>
+      <small class="badge badge-pill badge-warning">Please email us at fdbwellness@gmail.com if you have any questions.</small>
+      <br>
+
+      <div class="float-left col-sm-4" style="padding: 10px;">
+        
+        <form class="form-inline" role="form" id="form" onsubmit="return false;">
+            <div class="form-group">
+            <label for="name">Full Name:</label><br>
+           <input class="form-control form-control-sm" type="text" id="name" placeholder="Enter full name"/>
+        </div><br>
+        <div class="form-group">
+           <label for="number">Phone Number:</label><br>
+           <input class="form-control form-control-sm" type="text" id="number" placeholder="Enter phone number"/>
+           <small id="emailHelp" class="form-text text-muted">We'll never share your phone number with anyone else.</small>
+           </div><br>
+           <div class="form-group">
+           <label for="products">Choose Your Product</label><br>
+           <select class="form-control form-control-sm" id="products" name="product">
+            <option value="Choose Your Product">---</option>
+            <option value="Q Daily Detox Tea, Herbal Tea - $32.50">Q Daily Detox Tea, Herbal Tea - $32.50</option>
+            <option value="Q Ultra Greens, Apple Cinnamon - $52.50">Q Ultra Greens, Apple Cinnamon - $52.50</option>
+            <option value="Q Armor Chai Spice - $45">Q Armor Chai Spice - $45</option>
+            <option value="Q Core Daily Nutrition Vitamins - $150">Q Core Daily Nutrition Vitamins - $150</option>
+            <option value="Q Twist Crave Berry Smoothie - $52.50">Q Twist Crave Berry Smoothie - $52.50</option>
+            <option value="Q Twist Hydrate Juicy Grape - $52.50">Q Twist Hydrate Juicy Grape - $52.50</option>
+            <option value="Q Twist Calm Peach Lemonade NON-HEMP - $52.50">Q Twist Calm Peach Lemonade NON-HEMP - $52.50</option>
+            <option value="Q Twist Calm Peach Lemonade - $52.50">Q Twist Calm Peach Lemonade - $52.50</option>
+            <option value="Q Twist Variety Pack Berry Smoothie, Juicy Grape, Peach Lemonade - $52.50">Q Twist Variety Pack Berry Smoothie, Juicy Grape, Peach Lemonade - $52.50</option>
+            <option value="Q REV Pre-Workout Fresh Strawberry - $55">Q REV Pre-Workout Fresh Strawberry - $55</option>
+         </select>
+           </div><br>
+           <div class="form-group">
+           <label for="date">What date would you like to purchase?</label><br>
+         
+           <input  class="form-control form-control-sm"type="text" id="date" placeholder="Enter date for purchase"/><br>
+           <input class="btn btn-primary" type="submit" onclick="confirmInfo();"/><br>
+         </div>
+           </form>
+        </div><br>
+         
+    
+     
+    </div>
+    </div>
+  </div>
+</div>
+</div>  
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
